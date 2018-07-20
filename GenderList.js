@@ -48,10 +48,7 @@ export default class GenderList extends React.Component {
                           data={dataGenders}
                           renderItem={({item}) => <GenderItem item={item} onPlay={(i) => this.handlePlay(i)}/>}
                 />
-                <Video source={{uri: this.state.playingUrl}} // Can be a URL or a local file.
-                       ref="audioElement"
-                       paused={this.state.paused}               // Pauses playback entirely
-                       style={styles.audioElement} />
+
             </View>
 
 
